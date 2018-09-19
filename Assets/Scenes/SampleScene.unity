@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -256,6 +257,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 2.37, y: 6.45, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aafb62d5b2798b4083ac369bc0d2b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyShipIncremement: 100
+  enemyShipPrefab: {fileID: 1392865240}
+  leftBound: -200
+  rightBound: 200
+  topBound: 0
 --- !u!1 &1392865240
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +285,6 @@ GameObject:
   - component: {fileID: 1392865243}
   - component: {fileID: 1392865242}
   - component: {fileID: 1392865241}
-  - component: {fileID: 1392865246}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -284,10 +300,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1392865240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32200faa0d4d88646a6bdfd4c15c76de, type: 3}
+  m_Script: {fileID: 11500000, guid: d7fa7bd454ad2584994b1943120511b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 51.87
 --- !u!65 &1392865242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -355,14 +370,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1392865246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392865240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
